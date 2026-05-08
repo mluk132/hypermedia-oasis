@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SparklesIcon, ChatBubbleLeftRightIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, ChatBubbleLeftRightIcon, MagnifyingGlassIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function MessagesPage() {
   const conversations = [
@@ -16,8 +16,8 @@ export default function MessagesPage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Hypermedia Oasis</span>
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Hypnotic</span>
             </Link>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function MessagesPage() {
               <div className="card p-4">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-xl font-bold">Messages</h2>
-                  <ChatBubbleLeftRightIcon className="h-6 w-6 text-indigo-600" />
+                  <ChatBubbleLeftRightIcon className="h-6 w-6 text-purple-600" />
                 </div>
                 <div className="relative mb-4">
                   <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
@@ -45,7 +45,7 @@ export default function MessagesPage() {
                           <div className="flex items-center justify-between">
                             <p className="font-semibold truncate">{conv.user}</p>
                             {conv.unread > 0 && (
-                              <span className="bg-indigo-600 text-white text-xs rounded-full px-2 py-1">{conv.unread}</span>
+                              <span className="bg-purple-600 text-white text-xs rounded-full px-2 py-1">{conv.unread}</span>
                             )}
                           </div>
                           <p className="text-sm text-gray-600 truncate">{conv.message}</p>

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { SparklesIcon, MagnifyingGlassIcon, FireIcon, ClockIcon, HeartIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, MagnifyingGlassIcon, FireIcon, ClockIcon, HeartIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function ExplorePage() {
   const [categories] = useState(['Technology', 'Design', 'Business', 'Health', 'Entertainment', 'Education'])
@@ -18,15 +18,15 @@ export default function ExplorePage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Hypermedia Oasis
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Hypnotic
               </span>
             </Link>
             <div className="flex items-center space-x-6">
-              <Link href="/feed" className="text-gray-700 hover:text-indigo-600 transition-colors">Feed</Link>
-              <Link href="/explore" className="text-indigo-600 font-medium">Explore</Link>
-              <Link href="/profile" className="text-gray-700 hover:text-indigo-600 transition-colors">Profile</Link>
+              <Link href="/feed" className="text-gray-700 hover:text-purple-600 transition-colors">Feed</Link>
+              <Link href="/explore" className="text-purple-600 font-medium">Explore</Link>
+              <Link href="/profile" className="text-gray-700 hover:text-purple-600 transition-colors">Profile</Link>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function ExplorePage() {
           <div className="mb-12">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold">Trending Now</h2>
-              <Link href="/trending" className="text-indigo-600 hover:text-indigo-700 font-medium">
+              <Link href="/trending" className="text-purple-600 hover:text-indigo-700 font-medium">
                 View All →
               </Link>
             </div>

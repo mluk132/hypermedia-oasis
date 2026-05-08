@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SparklesIcon, BookmarkIcon, ClockIcon, HeartIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, BookmarkIcon, ClockIcon, HeartIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function BookmarksPage() {
   const bookmarks = [
@@ -16,14 +16,14 @@ export default function BookmarksPage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Hypermedia Oasis
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Hypnotic
               </span>
             </Link>
             <div className="flex items-center space-x-6">
-              <Link href="/feed" className="text-gray-700 hover:text-indigo-600 transition-colors">Feed</Link>
-              <Link href="/profile" className="text-gray-700 hover:text-indigo-600 transition-colors">Profile</Link>
+              <Link href="/feed" className="text-gray-700 hover:text-purple-600 transition-colors">Feed</Link>
+              <Link href="/profile" className="text-gray-700 hover:text-purple-600 transition-colors">Profile</Link>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function BookmarksPage() {
       <div className="pt-24 pb-12">
         <div className="container-custom max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
-            <BookmarkIcon className="h-10 w-10 text-indigo-600" />
+            <BookmarkIcon className="h-10 w-10 text-purple-600" />
             <div>
               <h1 className="text-4xl font-bold">Saved Content</h1>
               <p className="text-gray-600">{bookmarks.length} items saved</p>
@@ -57,7 +57,7 @@ export default function BookmarksPage() {
                       </span>
                     </div>
                   </div>
-                  <button className="text-indigo-600 hover:text-indigo-700">
+                  <button className="text-purple-600 hover:text-indigo-700">
                     <BookmarkIcon className="h-6 w-6 fill-current" />
                   </button>
                 </div>

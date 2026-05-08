@@ -9,7 +9,7 @@ import {
   SparklesIcon,
   UserGroupIcon,
   GlobeAltIcon
-} from '@heroicons/react/24/outline'
+, MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function Home() {
   return (
@@ -19,25 +19,25 @@ export default function Home() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Hypermedia Oasis
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Hypnotic
               </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/feed" className="text-gray-700 hover:text-indigo-600 transition-colors">
+              <Link href="/feed" className="text-gray-700 hover:text-purple-600 transition-colors">
                 Feed
               </Link>
-              <Link href="/create" className="text-gray-700 hover:text-indigo-600 transition-colors">
+              <Link href="/create" className="text-gray-700 hover:text-purple-600 transition-colors">
                 Create
               </Link>
-              <Link href="/analytics" className="text-gray-700 hover:text-indigo-600 transition-colors">
+              <Link href="/analytics" className="text-gray-700 hover:text-purple-600 transition-colors">
                 Analytics
               </Link>
-              <Link href="/login" className="text-gray-700 hover:text-indigo-600 transition-colors font-medium">
+              <Link href="/login" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
                 Login
               </Link>
-              <Link href="/register" className="btn btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700">
+              <Link href="/register" className="btn btn-primary bg-gradient-to-r from-purple-600 to-pink-600 hover:from-indigo-700 hover:to-purple-700">
                 Sign Up Free
               </Link>
             </div>
@@ -51,7 +51,7 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-6">
+              <div className="inline-block px-4 py-2 bg-purple-100 text-indigo-700 rounded-full text-sm font-medium mb-6">
                 🎬 The Future of Content Creation
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -61,7 +61,7 @@ export default function Home() {
                 The ultimate platform for hypermedia storytelling. Embed videos, audio, interactive widgets, and more. Engage your audience like never before.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/register" className="btn btn-primary text-lg px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600">
+                <Link href="/register" className="btn btn-primary text-lg px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600">
                   Start Creating Free →
                 </Link>
                 <Link href="/feed" className="btn btn-secondary text-lg px-8 py-4">
@@ -83,7 +83,7 @@ export default function Home() {
               <div className="card p-8 bg-gradient-to-br from-white to-indigo-50">
                 <div className="space-y-4">
                   <div className="h-48 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center">
-                    <SparklesIcon className="h-24 w-24 text-indigo-600" />
+                    <SparklesIcon className="h-24 w-24 text-purple-600" />
                   </div>
                   <div className="space-y-2">
                     <div className="h-4 bg-indigo-200 rounded w-3/4"></div>
@@ -97,8 +97,8 @@ export default function Home() {
           {/* Feature Cards */}
           <div className="grid md:grid-cols-3 gap-8 mt-24 container-custom">
             <Link href="/feed" className="card p-8 hover-lift cursor-pointer group">
-              <div className="w-14 h-14 rounded-xl bg-indigo-100 flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors">
-                <BookOpenIcon className="h-7 w-7 text-indigo-600 group-hover:text-white transition-colors" />
+              <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
+                <BookOpenIcon className="h-7 w-7 text-purple-600 group-hover:text-white transition-colors" />
               </div>
               <h3 className="text-2xl font-bold mb-3">Dynamic Feed</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="container-custom">
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div className="animate-fade-in">
-              <div className="text-5xl font-bold text-indigo-600 mb-2">10M+</div>
+              <div className="text-5xl font-bold text-purple-600 mb-2">10M+</div>
               <div className="text-gray-600 text-lg">Content Pieces</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
@@ -160,8 +160,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="flex gap-6 animate-fade-in">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center">
-                  <GlobeAltIcon className="h-6 w-6 text-indigo-600" />
+                <div className="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center">
+                  <GlobeAltIcon className="h-6 w-6 text-purple-600" />
                 </div>
               </div>
               <div>
@@ -196,8 +196,8 @@ export default function Home() {
 
             <div className="flex gap-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center">
-                  <ChartBarIcon className="h-6 w-6 text-indigo-600" />
+                <div className="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center">
+                  <ChartBarIcon className="h-6 w-6 text-purple-600" />
                 </div>
               </div>
               <div>
@@ -210,15 +210,15 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
         <div className="container-custom text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Create Amazing Content?
           </h2>
-          <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of creators who are already using Hypermedia Oasis to tell their stories.
+          <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+            Join thousands of creators who are already using Hypnotic to tell their stories.
           </p>
-          <button className="btn bg-white text-indigo-600 hover:bg-gray-100 text-lg px-8 py-4">
+          <button className="btn bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-4">
             Start Free Trial
           </button>
         </div>
@@ -231,7 +231,7 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <SparklesIcon className="h-6 w-6 text-indigo-400" />
-                <span className="text-white font-bold">Hypermedia Oasis</span>
+                <span className="text-white font-bold">Hypnotic</span>
               </div>
               <p className="text-sm">Create, share, and discover rich hypermedia content.</p>
             </div>
@@ -261,7 +261,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-            © 2026 Hypermedia Oasis. All rights reserved.
+            © 2026 Hypnotic. All rights reserved.
           </div>
         </div>
       </footer>

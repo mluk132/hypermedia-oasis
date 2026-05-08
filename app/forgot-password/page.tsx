@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { SparklesIcon } from '@heroicons/react/24/outline';
+import { SparklesIcon , MusicalNoteIcon } from '@heroicons/react/24/outline';
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
@@ -43,9 +43,9 @@ export default function ForgotPasswordPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2 mb-6">
-            <SparklesIcon className="h-10 w-10 text-indigo-600" />
-            <span className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Hypermedia Oasis
+            <MusicalNoteIcon className="h-10 w-10 text-purple-600" />
+            <span className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Hypnotic
             </span>
           </Link>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Forgot Password?</h1>
@@ -86,14 +86,14 @@ export default function ForgotPasswordPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Sending...' : 'Send Reset Link'}
             </button>
           </form>
 
           <div className="mt-6 text-center">
-            <Link href="/login" className="text-indigo-600 hover:text-indigo-700 text-sm font-medium">
+            <Link href="/login" className="text-purple-600 hover:text-indigo-700 text-sm font-medium">
               ← Back to Login
             </Link>
           </div>
@@ -101,7 +101,7 @@ export default function ForgotPasswordPage() {
 
         <p className="text-center text-gray-600 text-sm mt-6">
           Don't have an account?{' '}
-          <Link href="/register" className="text-indigo-600 hover:text-indigo-700 font-medium">
+          <Link href="/register" className="text-purple-600 hover:text-indigo-700 font-medium">
             Sign up
           </Link>
         </p>

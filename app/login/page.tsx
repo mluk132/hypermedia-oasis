@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { SparklesIcon, EnvelopeIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, EnvelopeIcon, LockClosedIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -46,9 +46,9 @@ export default function LoginPage() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center space-x-2">
-            <SparklesIcon className="h-12 w-12 text-indigo-600" />
-            <span className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Hypermedia Oasis
+            <MusicalNoteIcon className="h-12 w-12 text-purple-600" />
+            <span className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Hypnotic
             </span>
           </Link>
           <h2 className="mt-6 text-3xl font-bold text-gray-900">Welcome back</h2>
@@ -97,10 +97,10 @@ export default function LoginPage() {
               </div>
               <div className="flex items-center justify-between mt-2">
                 <label className="flex items-center">
-                  <input type="checkbox" className="rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
+                  <input type="checkbox" className="rounded border-gray-300 text-purple-600 focus:ring-indigo-500" />
                   <span className="ml-2 text-sm text-gray-600">Remember me</span>
                 </label>
-                <Link href="/forgot-password" className="text-sm text-indigo-600 hover:text-indigo-500">
+                <Link href="/forgot-password" className="text-sm text-purple-600 hover:text-indigo-500">
                   Forgot password?
                 </Link>
               </div>
@@ -109,7 +109,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full btn btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 disabled:opacity-50"
+              className="w-full btn btn-primary bg-gradient-to-r from-purple-600 to-pink-600 hover:from-indigo-700 hover:to-purple-700 disabled:opacity-50"
             >
               {loading ? 'Signing in...' : 'Sign In'}
             </button>
@@ -143,7 +143,7 @@ export default function LoginPage() {
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Don't have an account?{' '}
-            <Link href="/register" className="font-medium text-indigo-600 hover:text-indigo-500">
+            <Link href="/register" className="font-medium text-purple-600 hover:text-indigo-500">
               Sign up
             </Link>
           </p>

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { SparklesIcon, EnvelopeIcon, LockClosedIcon, UserIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, EnvelopeIcon, LockClosedIcon, UserIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function RegisterPage() {
   const router = useRouter()
@@ -58,9 +58,9 @@ export default function RegisterPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center space-x-2">
-            <SparklesIcon className="h-12 w-12 text-indigo-600" />
-            <span className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Hypermedia Oasis
+            <MusicalNoteIcon className="h-12 w-12 text-purple-600" />
+            <span className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Hypnotic
             </span>
           </Link>
           <h2 className="mt-6 text-3xl font-bold text-gray-900">Create your account</h2>
@@ -149,7 +149,7 @@ export default function RegisterPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full btn btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 disabled:opacity-50"
+              className="w-full btn btn-primary bg-gradient-to-r from-purple-600 to-pink-600 hover:from-indigo-700 hover:to-purple-700 disabled:opacity-50"
             >
               {loading ? 'Creating account...' : 'Create Account'}
             </button>
@@ -183,7 +183,7 @@ export default function RegisterPage() {
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Already have an account?{' '}
-            <Link href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
+            <Link href="/login" className="font-medium text-purple-600 hover:text-indigo-500">
               Sign in
             </Link>
           </p>

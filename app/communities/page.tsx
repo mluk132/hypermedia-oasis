@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SparklesIcon, UserGroupIcon, PlusIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, UserGroupIcon, PlusIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function CommunitiesPage() {
   const communities = [
@@ -17,8 +17,8 @@ export default function CommunitiesPage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Hypermedia Oasis</span>
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Hypnotic</span>
             </Link>
           </div>
         </div>

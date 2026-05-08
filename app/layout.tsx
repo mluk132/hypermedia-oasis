@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Hypermedia Oasis - Rich Content Platform',
+  title: 'Hypnotic - Rich Content Platform',
   description: 'Create, share, and discover rich hypermedia content',
 }
 

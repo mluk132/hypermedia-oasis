@@ -11,7 +11,7 @@ import {
   ShareIcon,
   PencilSquareIcon,
   Cog6ToothIcon
-} from '@heroicons/react/24/outline'
+, MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function ProfilePage() {
   const [user] = useState({
@@ -42,15 +42,15 @@ export default function ProfilePage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Hypermedia Oasis
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Hypnotic
               </span>
             </Link>
             <div className="flex items-center space-x-6">
-              <Link href="/feed" className="text-gray-700 hover:text-indigo-600 transition-colors">Feed</Link>
-              <Link href="/create" className="text-gray-700 hover:text-indigo-600 transition-colors">Create</Link>
-              <Link href="/profile" className="text-indigo-600 font-medium">Profile</Link>
+              <Link href="/feed" className="text-gray-700 hover:text-purple-600 transition-colors">Feed</Link>
+              <Link href="/create" className="text-gray-700 hover:text-purple-600 transition-colors">Create</Link>
+              <Link href="/profile" className="text-purple-600 font-medium">Profile</Link>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function ProfilePage() {
                 </div>
                 <p className="text-gray-700 mb-6">{user.bio}</p>
                 <div className="flex gap-4">
-                  <Link href="/create" className="btn btn-primary bg-gradient-to-r from-indigo-600 to-purple-600">
+                  <Link href="/create" className="btn btn-primary bg-gradient-to-r from-purple-600 to-pink-600">
                     <PencilSquareIcon className="h-5 w-5 mr-2" />
                     Create Content
                   </Link>
@@ -95,9 +95,9 @@ export default function ProfilePage() {
             <div className="card p-6 hover-lift">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-gray-600">Posts</span>
-                <PencilSquareIcon className="h-5 w-5 text-indigo-600" />
+                <PencilSquareIcon className="h-5 w-5 text-purple-600" />
               </div>
-              <div className="text-3xl font-bold text-indigo-600">{stats.posts}</div>
+              <div className="text-3xl font-bold text-purple-600">{stats.posts}</div>
             </div>
             <div className="card p-6 hover-lift">
               <div className="flex items-center justify-between mb-2">
@@ -116,9 +116,9 @@ export default function ProfilePage() {
             <div className="card p-6 hover-lift">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-gray-600">Followers</span>
-                <UserCircleIcon className="h-5 w-5 text-indigo-600" />
+                <UserCircleIcon className="h-5 w-5 text-purple-600" />
               </div>
-              <div className="text-3xl font-bold text-indigo-600">{stats.followers.toLocaleString()}</div>
+              <div className="text-3xl font-bold text-purple-600">{stats.followers.toLocaleString()}</div>
             </div>
           </div>
 
@@ -128,7 +128,7 @@ export default function ProfilePage() {
               <div className="card p-6">
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-2xl font-bold">Recent Posts</h2>
-                  <Link href="/feed" className="text-indigo-600 hover:text-indigo-700 text-sm font-medium">
+                  <Link href="/feed" className="text-purple-600 hover:text-indigo-700 text-sm font-medium">
                     View All →
                   </Link>
                 </div>
@@ -158,9 +158,9 @@ export default function ProfilePage() {
               <div className="card p-6 mb-6">
                 <h2 className="text-xl font-bold mb-4">Quick Actions</h2>
                 <div className="space-y-3">
-                  <Link href="/create" className="block p-3 bg-indigo-50 rounded-lg hover:bg-indigo-100 transition-colors">
+                  <Link href="/create" className="block p-3 bg-indigo-50 rounded-lg hover:bg-purple-100 transition-colors">
                     <div className="flex items-center gap-3">
-                      <PencilSquareIcon className="h-5 w-5 text-indigo-600" />
+                      <PencilSquareIcon className="h-5 w-5 text-purple-600" />
                       <span className="font-medium">Create Post</span>
                     </div>
                   </Link>

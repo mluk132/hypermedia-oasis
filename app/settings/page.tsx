@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SparklesIcon, UserIcon, BellIcon, ShieldCheckIcon, CreditCardIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, UserIcon, BellIcon, ShieldCheckIcon, CreditCardIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function SettingsPage() {
   return (
@@ -10,9 +10,9 @@ export default function SettingsPage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Hypermedia Oasis
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Hypnotic
               </span>
             </Link>
           </div>
@@ -25,7 +25,7 @@ export default function SettingsPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/settings/profile" className="card p-6 hover-lift cursor-pointer">
-              <UserIcon className="h-8 w-8 text-indigo-600 mb-3" />
+              <UserIcon className="h-8 w-8 text-purple-600 mb-3" />
               <h3 className="text-xl font-bold mb-2">Profile Settings</h3>
               <p className="text-gray-600">Update your profile information and preferences</p>
             </Link>

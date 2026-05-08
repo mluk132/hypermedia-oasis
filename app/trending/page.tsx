@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SparklesIcon, FireIcon, ArrowTrendingUpIcon, ClockIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, FireIcon, ArrowTrendingUpIcon, ClockIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function TrendingPage() {
   const trending = [
@@ -18,15 +18,15 @@ export default function TrendingPage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Hypermedia Oasis
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Hypnotic
               </span>
             </Link>
             <div className="flex items-center space-x-6">
-              <Link href="/feed" className="text-gray-700 hover:text-indigo-600 transition-colors">Feed</Link>
-              <Link href="/explore" className="text-gray-700 hover:text-indigo-600 transition-colors">Explore</Link>
-              <Link href="/profile" className="text-gray-700 hover:text-indigo-600 transition-colors">Profile</Link>
+              <Link href="/feed" className="text-gray-700 hover:text-purple-600 transition-colors">Feed</Link>
+              <Link href="/explore" className="text-gray-700 hover:text-purple-600 transition-colors">Explore</Link>
+              <Link href="/profile" className="text-gray-700 hover:text-purple-600 transition-colors">Profile</Link>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SparklesIcon, CurrencyDollarIcon, ChartBarIcon, BanknotesIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, CurrencyDollarIcon, ChartBarIcon, BanknotesIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function MonetizationPage() {
   const earnings = {
@@ -17,8 +17,8 @@ export default function MonetizationPage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Hypermedia Oasis</span>
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Hypnotic</span>
             </Link>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function MonetizationPage() {
             </div>
             <div className="card p-6">
               <div className="text-sm text-gray-600 mb-2">Total Earned</div>
-              <div className="text-3xl font-bold text-indigo-600">${earnings.total.toLocaleString()}</div>
+              <div className="text-3xl font-bold text-purple-600">${earnings.total.toLocaleString()}</div>
             </div>
             <div className="card p-6">
               <div className="text-sm text-gray-600 mb-2">Subscribers</div>
@@ -58,7 +58,7 @@ export default function MonetizationPage() {
             <h2 className="text-2xl font-bold mb-6">Revenue Breakdown</h2>
             <div className="h-64 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-lg flex items-center justify-center">
               <div className="text-center">
-                <ChartBarIcon className="h-16 w-16 text-indigo-600 mx-auto mb-2" />
+                <ChartBarIcon className="h-16 w-16 text-purple-600 mx-auto mb-2" />
                 <p className="text-gray-600">Revenue chart visualization</p>
               </div>
             </div>

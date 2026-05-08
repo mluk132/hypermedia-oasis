@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SparklesIcon, CalendarIcon, ClockIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import { SparklesIcon, CalendarIcon, ClockIcon, UserGroupIcon , MusicalNoteIcon } from '@heroicons/react/24/outline'
 
 export default function EventsPage() {
   const events = [
@@ -16,8 +16,8 @@ export default function EventsPage() {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <SparklesIcon className="h-8 w-8 text-indigo-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Hypermedia Oasis</span>
+              <MusicalNoteIcon className="h-8 w-8 text-purple-600" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Hypnotic</span>
             </Link>
           </div>
         </div>
@@ -26,7 +26,7 @@ export default function EventsPage() {
       <div className="pt-24 pb-12">
         <div className="container-custom">
           <div className="flex items-center gap-3 mb-8">
-            <CalendarIcon className="h-10 w-10 text-indigo-600" />
+            <CalendarIcon className="h-10 w-10 text-purple-600" />
             <div>
               <h1 className="text-4xl font-bold">Upcoming Events</h1>
               <p className="text-gray-600">Live webinars, workshops, and conferences</p>
@@ -40,7 +40,7 @@ export default function EventsPage() {
                   {event.image}
                 </div>
                 <div className="p-6">
-                  <div className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-3">
+                  <div className="inline-block px-3 py-1 bg-purple-100 text-indigo-700 rounded-full text-sm font-medium mb-3">
                     {event.type}
                   </div>
                   <h3 className="text-xl font-bold mb-3">{event.title}</h3>
